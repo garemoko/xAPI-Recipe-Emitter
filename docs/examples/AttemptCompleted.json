@@ -51,16 +51,12 @@
                     }
                 },
                 {
-                    "objectType": "Activity",
-                    "id": "http://localhost/moodle/mod/quiz/view.php?id=3",
-                    "definition": {
-                        "type": "http://lrs.learninglocker.net/define/type/moodle/quiz",
-                        "name": {
-                            "en": "My Test Quiz 1"
-                        },
-                        "description": {
-                            "en": "A module"
-                        }
+                "objectType": "Activity",
+                "id": "http://localhost/moodle/mod/quiz/attempt.php?attempt=42",
+                "definition": {
+                    "type": "http://lrs.learninglocker.net/define/type/moodle/attempt",
+                    "name": {
+                        "en": "Attempt 42"
                     }
                 }
             ]
@@ -97,12 +93,16 @@
     },
     "timestamp": "2015-06-17T16:02:02+01:00",
     "object": {
-        "objectType": "Activity",
-        "id": "http://localhost/moodle/mod/quiz/attempt.php?attempt=42",
-        "definition": {
-            "type": "http://lrs.learninglocker.net/define/type/moodle/attempt",
-            "name": {
-                "en": "Attempt 42"
+            "objectType": "Activity",
+            "id": "http://localhost/moodle/mod/quiz/view.php?id=3",
+            "definition": {
+                "type": "http://lrs.learninglocker.net/define/type/moodle/quiz",
+                "name": {
+                    "en": "My Test Quiz 1"
+                },
+                "description": {
+                    "en": "A module"
+                }
             }
         }
     },
