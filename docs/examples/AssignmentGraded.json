@@ -96,12 +96,95 @@
     },
     "timestamp": "2015-06-18T10:57:03+01:00",
     "object": {
-        "objectType": "Agent",
-        "name": "ryansmith",
-        "account": {
-            "name": "2",
-            "homePage": "http://localhost/moodle"
-        }
+        "objectType": "SubStatement",
+        "actor": {
+            "objectType": "Agent",
+            "name": "ryansmith",
+            "account": {
+                "name": "2",
+                "homePage": "http://localhost/moodle"
+            }
+        },
+        "verb": {
+            "id": "http://adlnet.gov/expapi/verbs/completed",
+            "display": {
+                "en": "completed"
+            }
+        },
+        "context": {
+            "contextActivities": {
+                "grouping": [
+                    {
+                        "objectType": "Activity",
+                        "id": "http://localhost/moodle/course.php?id=1",
+                        "definition": {
+                            "type": "http://lrs.learninglocker.net/define/type/moodle/course",
+                            "name": {
+                                "en": "My Test Site"
+                            },
+                            "description": {
+                                "en": "<p>A test site.</p>"
+                            }
+                        }
+                    },
+                    {
+                        "objectType": "Activity",
+                        "id": "http://localhost/moodle/course.php?id=2",
+                        "definition": {
+                            "type": "http://lrs.learninglocker.net/define/type/moodle/course",
+                            "name": {
+                                "en": "My Test Course 1"
+                            },
+                            "description": {
+                                "en": "<p>A test course.</p>"
+                            }
+                        }
+                    }
+                ]
+            },
+            "platform": "Moodle",
+            "extensions": {
+                "http://lrs.learninglocker.net/define/extensions/moodle_logstore_standard_log": {
+                    "eventname": "\\mod_assign\\event\\assessable_submitted",
+                    "component": "mod_assign",
+                    "action": "submitted",
+                    "objecttable": "assign_submission",
+                    "objectid": "5",
+                    "crud": "u",
+                    "edulevel": 2,
+                    "contextid": 50,
+                    "contextlevel": 70,
+                    "contextinstanceid": "10",
+                    "userid": "2",
+                    "courseid": "2",
+                    "other": "a:1:{s:19:\"submission_editable\";b:1;}",
+                    "timecreated": 1434617044,
+                    "origin": "web",
+                    "ip": "127.0.0.1",
+                    "object": "assessable"
+                },
+                "http://lrs.learninglocker.net/define/extensions/info": {
+                    "https://moodle.org/": "1.0.0",
+                    "https://github.com/LearningLocker/Moodle-Log-Expander": "1.0.0",
+                    "https://github.com/LearningLocker/Moodle-xAPI-Translator": "1.0.0",
+                    "https://github.com/LearningLocker/xAPI-Recipe-Emitter": "1.0.0"
+                }
+            }
+        },
+        "timestamp": "2015-06-18T09:44:04+01:00",
+        "object": {
+            "objectType": "Activity",
+            "id": "http://localhost/moodle/mod/assign/view.php?id=10",
+            "definition": {
+                "type": "http://lrs.learninglocker.net/define/type/moodle/assign",
+                "name": {
+                    "en": "My Test Assignment 3"
+                },
+                "description": {
+                    "en": "A module"
+                }
+            }
+        },
     },
     "authority": {
         "objectType": "Agent",
