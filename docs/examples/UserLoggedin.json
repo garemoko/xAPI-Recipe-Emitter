@@ -2,7 +2,7 @@
     "version": "1.0.0",
     "actor": {
         "objectType": "Agent",
-        "name": "ryansmith",
+        "name": "Ryan Smith",
         "account": {
             "name": "3",
             "homePage": "http://localhost/moodle"
